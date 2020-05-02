@@ -1,8 +1,4 @@
 """
-.. module:: momentum
-   :synopsis: Momentum Indicators.
-
-.. moduleauthor:: Dario Lopez Padial (Bukosabino)
 
 """
 import numpy as np
@@ -10,16 +6,10 @@ import pandas as pd
 
 from ta.utils import IndicatorMixin
 
-
 class RSIIndicator(IndicatorMixin):
     """Relative Strength Index (RSI)
 
-    Compares the magnitude of recent gains and losses over a specified time
-    period to measure speed and change of price movements of a security. It is
-    primarily used to attempt to identify overbought or oversold conditions in
-    the trading of an asset.
-
-    https://www.investopedia.com/terms/r/rsi.asp
+      https://www.investopedia.com/terms/r/rsi.asp
 
     Args:
         close(pandas.Series): dataset 'Close' column.
